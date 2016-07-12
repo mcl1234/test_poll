@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+         <title>DLoomioo</title>
+
+         <meta charset="utf-8">
+         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+         <link rel="stylesheet" href="css/all.css" />
+
+         <base href="" target="_top" id="base">
+
+         <script>
+            setTimeout(function() {
+                // Fix URLs
+         	      base.href = document.location.href.replace("/media", "").replace("index.html", "").replace(/([&?])wrapper=False/, "$1").replace(/&$/, "").replace(/[&?]wrapper_nonce=[A-Za-z0-9]+/, "")
+            }, 100)
+            // 100ms later, to workaround double js download in Chrome
+         </script>
+    </head>
+    <body>
+
+        <!-- editbar -->
+        <div class="editbg"></div>
+
+        <div class="editbar bottombar">
+           <ul class="markdown-help">
+              <li># H1</li>
+              <li>## H2</li>
+              <li>### H3</li>
+              <li><i>_italic_</i></li>
+              <li><b>**bold**</b></li>
+              <li>~~<s>strikethrough</s>~~</li>
+              <li>- Lists</li>
+              <li>1. Numbered lists</li>
+              <li>[Links](http://www.zeronet.io)</li>
+              <li>[References][1]<br>[1]: Can be used</li>
+              <li>![image alt](img/logo.png)</li>
+              <li>Inline <code>`code`</code></li>
+              <li><code>```python<br>print "Code block"<br>```</code></li>
+              <li>&gt; Quotes</li>
+              <li>--- Horizontal rule</li>
+           </ul>
+
+           <a href="#Markdown+help" class="icon-help">?</a> Editer: <span class="object">Post:21.body</span>
+           <a href="#Save" class="button save">Enregistrer</a>
+           <a href="#Delete" class="button button-delete button-outline delete">Supprimer</a>
+           <a href="#Cancel" class="cancel">Annuler</a>
+
+        </div>
+        <!-- EOF editbar -->
+
+
+        <!-- Head -->
+        <!--
+        <div class="topmenu">
+           <div class="links">
+              Forums:
+              <a href="http://127.0.0.1:43110/Talk.ZeroNetwork.bit">Main</a> &middot;
+              <a href="http://127.0.0.1:43110/165eqHdoQfyf7CVGqtVCGNDvMBZhwVSJBL">Español</a> &middot;
+              <a href="http://127.0.0.1:43110/1Vp5LH4wegCaqeB72yMw2jgNdVm4aR7ET">Français</a> &middot;
+              <a href="http://127.0.0.1:43110/1GRYnz73jSXoMMZNU3nSmbCFA3twuitcoo">Polish</a> &middot;
+              <a href="http://127.0.0.1:43110/1LULE6frq3kw2vbhe4i6ArUTo4YT99Czbj">Português</a> &middot;
+              <a href="http://127.0.0.1:43110/1Apr5ba6u9Nz6eFASmFrefGvyBKkM76QgE">Russian</a> &middot;
+              <a href="http://127.0.0.1:43110/1Nse6WcodQ5Mj6ZwvZvuyCVvQESwuxbCUy">中文</a>
+           </div>
+        </div>
+
+
+        <div class="head">
+            <a class="logo nolink" href="?Home">Zer0 <br /> Talk</a>
+        </div>
+        -->
+        <!-- EOF Head -->
+
+
+        <!-- Page: Main -->
+        <div class="center topics-list">
+            <h1 class="topics-title">Sujets récents</h1>
+            <a href="#Follow" class="feed-follow feed-follow-list">
+                <span class='text-follow'>Suivre dans le flux</span>
+                <span class='text-following'>En suivi</span>
+                <div class="icon-feed"></div>
+            </a>
+
+             <!-- New Topic -->
+             <a href="#New+topic" class="topic-new-link nolink"> + Créer un nouveau sujet</a>
+             <div class="topic topic-new" style="display: none">
+                <a href="#" class="image nolink">
+                    <div class="icon icon-topic-chat"></div>
+                </a>
+
+                <h2 class="title">
+                    <input type="text" id="topic_title" class="text" placeholder="Titre du sujet">
+                </h2>
+
+                <div class="body">
+                    <textarea id="topic_body" placeholder="Description du sujet"></textarea>
+                </div>
+
+                <div class="info">
+                    <a class="user_name user_name-my certselect" href="#Change+user" title='Change user'>user_name</a>
+                    &#9473;
+                    <span class="added">nouveau sujet</span>
+                </div>
+
+                <a href="#Add+new+topic" class="button button-submit">Ajouter un nouveau sujet</a>
+
+                <div style="clear: both"></div>
+             </div>
+             <!-- EOF New Topic -->
+
+             <div class="topics-loading"><img src="img/loading.gif"/>Chargement...</div>
+
+             <div class="topics">
+
+                <!-- Template: Topic -->
+                <div class="topic template">
+                    <div class="dot">&bullet;</div>
+                    <a href="#" class="image nolink">
+                        <div class="icon icon-topic-chat"></div>
+                    </a>
+
+                    <h2 class="title"> <a href="#" class="title-link">Title</a> </h2>
+
+                    <div class="body">Body</div>
+                    <a href="#" class="link">
+                        <div class="icon icon-link"></div>
+                        <span class="link-url"></span>
+                    </a>
+
+                    <div class="info">
+                        <a class="score" href="#Upvote">
+                            <span class="score-inactive"> <span class="icon-up">^</span><span class="score-num">1</span> </span>
+                            <span class="score-active"> <span class="icon-up">^</span><span class="score-num">2</span> </span>
+                        </a>
+
+                        <a href="#" class="comment-num"></a>
+
+                        <span class="added">added</span>
+                        &#9473; publié par
+                        <span class="user_name">user_name</span>
+                   </div>
+                </div>
+                <!-- EOF Template: Topic main -->
+
+             </div>
+
+             <a href="#More" class="topics-more">More topics</a>
+
+        </div>
+        <!-- EOF Page: Main -->
+
+
+        <canvas id="canvas_pie" width="200" height="200" />
+
+        <!-- JavaScript libs :
+        ==============================================-->
+        <script type="text/javascript" src="js/all.js"></script>
+
+        <script>
+            $(".topmenu a").each( function(i, elem) {
+                $(elem).attr("href", Text.fixLink($(elem).attr("href")))
+            });
+        </script>
+
+
+        <!-- canvas_pie
+        ================-->
+        <script>
+
+            var canvas          = document.getElementById("canvas_pie");
+            var canvas_drawing  = canvas.getContext("2d");
+            var radians         = 0;                          // geometry of the pie in radians
+            var total_votes     = 0;                          // Automatically calculated , so don't need to change the initial value
+            var votes           = [200, 600, 15];              // If you add more data values make sure you add more colors
+            var color_pie       = ['yellow', 'green', 'blue'];  // Colors of each slice of the pie
+
+            // Calculating the all the votes
+            for (var j=0;   j<votes.length;  j++) {
+                total_votes += votes[j];
+            }
+
+            // Drawing the pie
+            for (var i=0;   i<votes.length;  i++) {
+                canvas_drawing.fillStyle = color_pie[i];
+                canvas_drawing.beginPath();
+                canvas_drawing.moveTo(canvas.width / 2, canvas.height / 2);
+
+                // Arc Parameters: x, y, radius, startingAngle (radians), endingAngle (radians), antiClockwise (boolean)
+                canvas_drawing.arc( canvas.width / 2,
+                                    canvas.height / 2,
+                                    canvas.height / 2,
+                                    radians,
+                                    radians + ( Math.PI * 2 * ( votes[i] / total_votes ) ),
+                                    false );
+                canvas_drawing.lineTo( canvas.width / 2, canvas.height / 2 );
+                canvas_drawing.fill();
+                radians += Math.PI * 2 * (votes[i] / total_votes);
+            }
+
+        </script>
+
+        <!-- End JavaScript libs.
+        ==============================================-->
+
+    </body>
+</html>
